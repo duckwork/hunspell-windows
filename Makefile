@@ -2,13 +2,13 @@ pkg.repos := http://repo.msys2.org/mingw/x86_64 \
 	https://downloads.sourceforge.net/project/msys2/REPOS/MINGW/x86_64 \
 	http://www2.futureware.at/~nickoe/msys2-mirror/mingw/x86_64
 
-pkg := hunspell-1.6.2-1 \
-	readline-7.0.005-1 \
-	gcc-libs-7.3.0-2 \
-	termcap-1.3.1-3 \
-	gettext-0.19.8.1-3 \
-	libwinpthread-git-6.0.0.5134.2416de71-1 \
-	libiconv-1.15-2
+pkg := hunspell-1.7.0-5 \
+	readline-8.0.004-1 \
+	gcc-libs-9.3.0-2 \
+	termcap-1.3.1-5 \
+	gettext-0.19.8.1-8 \
+	libwinpthread-git-8.0.0.5814.9dbf4cc1-1 \
+	libiconv-1.16-1
 
 out := _out
 cache := $(out)/cache
@@ -42,7 +42,7 @@ mkdir = @mkdir -p $(dir $@)
 
 
 dict.repo := $(cache)/dictionaries
-dict.repo.ref := 9ec31e4
+dict.repo.ref := e33e0a04e4
 
 $(cache)/.dictionaries:
 	$(mkdir)
